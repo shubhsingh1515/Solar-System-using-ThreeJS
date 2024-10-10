@@ -2,11 +2,12 @@
   "name": "solarsystem",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel ./src/index.html --port 3000",
-    "build": "npx parcel build ./src/index.html"
+    "build": "npx parcel build ./src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "three": "^0.133.0"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0"
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "gh-pages": "^6.1.1"
   }
 }
