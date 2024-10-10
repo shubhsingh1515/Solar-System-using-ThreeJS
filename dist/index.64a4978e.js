@@ -586,7 +586,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 },{}],"goJYj":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _three = require("three");
-var _orbitControlsJs = require("three/examples/jsm/controls/OrbitControls.js");
+var _orbitControls = require("three/examples/jsm/controls/OrbitControls");
 // Import textures
 var _starsJpg = require("../img/stars.jpg");
 var _starsJpgDefault = parcelHelpers.interopDefault(_starsJpg);
@@ -621,7 +621,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 const scene = new _three.Scene();
 const camera = new _three.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
-const orbit = new (0, _orbitControlsJs.OrbitControls)(camera, renderer.domElement);
+const orbit = new (0, _orbitControls.OrbitControls)(camera, renderer.domElement);
 camera.position.set(-90, 140, 140);
 orbit.update();
 // Ambient light
@@ -754,7 +754,7 @@ window.addEventListener("resize", ()=>{
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","../img/stars.jpg":"4FVaX","../img/mercury.jpg":"dk5ma","../img/venus.jpg":"bhfTa","../img/earth.jpg":"11ilA","../img/mars.jpg":"kRWMv","../img/jupiter.jpg":"bOnFa","../img/saturn.jpg":"2Y35g","../img/saturn ring.png":"b53oN","../img/uranus ring.png":"2rSZd","../img/neptune.jpg":"eVk6K","../img/pluto.jpg":"23OzQ","@parcel/transformer-js/src/esmodule-helpers.js":"0bAHd","../img/uranus.jpeg":"2RSJR","../img/sun.jpeg":"h6Fpe"}],"ktPTu":[function(require,module,exports) {
+},{"three":"ktPTu","../img/stars.jpg":"4FVaX","../img/mercury.jpg":"dk5ma","../img/venus.jpg":"bhfTa","../img/earth.jpg":"11ilA","../img/mars.jpg":"kRWMv","../img/jupiter.jpg":"bOnFa","../img/saturn.jpg":"2Y35g","../img/saturn ring.png":"b53oN","../img/uranus ring.png":"2rSZd","../img/neptune.jpg":"eVk6K","../img/pluto.jpg":"23OzQ","@parcel/transformer-js/src/esmodule-helpers.js":"0bAHd","../img/uranus.jpeg":"2RSJR","../img/sun.jpeg":"h6Fpe","three/examples/jsm/controls/OrbitControls":"7mqRv"}],"ktPTu":[function(require,module,exports) {
 /**
  * @license
  * Copyright 2010-2021 Three.js Authors
@@ -30087,7 +30087,81 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"7mqRv":[function(require,module,exports) {
+},{}],"4FVaX":[function(require,module,exports) {
+module.exports = require("eee35752dc67b9ca").getBundleURL("e6MYJ") + "stars.a1d7fe60.jpg" + "?" + Date.now();
+
+},{"eee35752dc67b9ca":"KoMmK"}],"KoMmK":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"dk5ma":[function(require,module,exports) {
+module.exports = require("18ae2dda862ced8c").getBundleURL("e6MYJ") + "mercury.e64be2d9.jpg" + "?" + Date.now();
+
+},{"18ae2dda862ced8c":"KoMmK"}],"bhfTa":[function(require,module,exports) {
+module.exports = require("4ef81d173e87cb30").getBundleURL("e6MYJ") + "venus.c3875816.jpg" + "?" + Date.now();
+
+},{"4ef81d173e87cb30":"KoMmK"}],"11ilA":[function(require,module,exports) {
+module.exports = require("67f918a338a5149").getBundleURL("e6MYJ") + "earth.0431f8a5.jpg" + "?" + Date.now();
+
+},{"67f918a338a5149":"KoMmK"}],"kRWMv":[function(require,module,exports) {
+module.exports = require("4a8c0cefe25b222b").getBundleURL("e6MYJ") + "mars.39828838.jpg" + "?" + Date.now();
+
+},{"4a8c0cefe25b222b":"KoMmK"}],"bOnFa":[function(require,module,exports) {
+module.exports = require("607366749d63ae90").getBundleURL("e6MYJ") + "jupiter.970a44f9.jpg" + "?" + Date.now();
+
+},{"607366749d63ae90":"KoMmK"}],"2Y35g":[function(require,module,exports) {
+module.exports = require("da889e5397765594").getBundleURL("e6MYJ") + "saturn.f0999ace.jpg" + "?" + Date.now();
+
+},{"da889e5397765594":"KoMmK"}],"b53oN":[function(require,module,exports) {
+module.exports = require("e88bb86db304213").getBundleURL("e6MYJ") + "saturn ring.cc9fe67e.png" + "?" + Date.now();
+
+},{"e88bb86db304213":"KoMmK"}],"2rSZd":[function(require,module,exports) {
+module.exports = require("ccc90e612c7ac272").getBundleURL("e6MYJ") + "uranus ring.bb04d0b4.png" + "?" + Date.now();
+
+},{"ccc90e612c7ac272":"KoMmK"}],"eVk6K":[function(require,module,exports) {
+module.exports = require("24c44dcf39c01677").getBundleURL("e6MYJ") + "neptune.69b29d20.jpg" + "?" + Date.now();
+
+},{"24c44dcf39c01677":"KoMmK"}],"23OzQ":[function(require,module,exports) {
+module.exports = require("17b153dc7db3007c").getBundleURL("e6MYJ") + "pluto.cc2d7afe.jpg" + "?" + Date.now();
+
+},{"17b153dc7db3007c":"KoMmK"}],"2RSJR":[function(require,module,exports) {
+module.exports = require("62fdf8282e06570f").getBundleURL("e6MYJ") + "uranus.ad2abb9a.jpeg" + "?" + Date.now();
+
+},{"62fdf8282e06570f":"KoMmK"}],"h6Fpe":[function(require,module,exports) {
+module.exports = require("c152324afeada927").getBundleURL("e6MYJ") + "sun.9101c105.jpeg" + "?" + Date.now();
+
+},{"c152324afeada927":"KoMmK"}],"7mqRv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "OrbitControls", ()=>OrbitControls);
@@ -30792,80 +30866,6 @@ class MapControls extends OrbitControls {
     }
 }
 
-},{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"0bAHd"}],"4FVaX":[function(require,module,exports) {
-module.exports = require("eee35752dc67b9ca").getBundleURL("e6MYJ") + "stars.a1d7fe60.jpg" + "?" + Date.now();
-
-},{"eee35752dc67b9ca":"KoMmK"}],"KoMmK":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"dk5ma":[function(require,module,exports) {
-module.exports = require("18ae2dda862ced8c").getBundleURL("e6MYJ") + "mercury.e64be2d9.jpg" + "?" + Date.now();
-
-},{"18ae2dda862ced8c":"KoMmK"}],"bhfTa":[function(require,module,exports) {
-module.exports = require("4ef81d173e87cb30").getBundleURL("e6MYJ") + "venus.c3875816.jpg" + "?" + Date.now();
-
-},{"4ef81d173e87cb30":"KoMmK"}],"11ilA":[function(require,module,exports) {
-module.exports = require("67f918a338a5149").getBundleURL("e6MYJ") + "earth.0431f8a5.jpg" + "?" + Date.now();
-
-},{"67f918a338a5149":"KoMmK"}],"kRWMv":[function(require,module,exports) {
-module.exports = require("4a8c0cefe25b222b").getBundleURL("e6MYJ") + "mars.39828838.jpg" + "?" + Date.now();
-
-},{"4a8c0cefe25b222b":"KoMmK"}],"bOnFa":[function(require,module,exports) {
-module.exports = require("607366749d63ae90").getBundleURL("e6MYJ") + "jupiter.970a44f9.jpg" + "?" + Date.now();
-
-},{"607366749d63ae90":"KoMmK"}],"2Y35g":[function(require,module,exports) {
-module.exports = require("da889e5397765594").getBundleURL("e6MYJ") + "saturn.f0999ace.jpg" + "?" + Date.now();
-
-},{"da889e5397765594":"KoMmK"}],"b53oN":[function(require,module,exports) {
-module.exports = require("e88bb86db304213").getBundleURL("e6MYJ") + "saturn ring.cc9fe67e.png" + "?" + Date.now();
-
-},{"e88bb86db304213":"KoMmK"}],"2rSZd":[function(require,module,exports) {
-module.exports = require("ccc90e612c7ac272").getBundleURL("e6MYJ") + "uranus ring.bb04d0b4.png" + "?" + Date.now();
-
-},{"ccc90e612c7ac272":"KoMmK"}],"eVk6K":[function(require,module,exports) {
-module.exports = require("24c44dcf39c01677").getBundleURL("e6MYJ") + "neptune.69b29d20.jpg" + "?" + Date.now();
-
-},{"24c44dcf39c01677":"KoMmK"}],"23OzQ":[function(require,module,exports) {
-module.exports = require("17b153dc7db3007c").getBundleURL("e6MYJ") + "pluto.cc2d7afe.jpg" + "?" + Date.now();
-
-},{"17b153dc7db3007c":"KoMmK"}],"2RSJR":[function(require,module,exports) {
-module.exports = require("62fdf8282e06570f").getBundleURL("e6MYJ") + "uranus.ad2abb9a.jpeg" + "?" + Date.now();
-
-},{"62fdf8282e06570f":"KoMmK"}],"h6Fpe":[function(require,module,exports) {
-module.exports = require("c152324afeada927").getBundleURL("e6MYJ") + "sun.9101c105.jpeg" + "?" + Date.now();
-
-},{"c152324afeada927":"KoMmK"}]},["3ko3w","goJYj"], "goJYj", "parcelRequire7930")
+},{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"0bAHd"}]},["3ko3w","goJYj"], "goJYj", "parcelRequire7930")
 
 //# sourceMappingURL=index.64a4978e.js.map
