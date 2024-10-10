@@ -590,8 +590,8 @@ var _orbitControlsJs = require("three/examples/jsm/controls/OrbitControls.js");
 // Import textures
 var _starsJpg = require("../img/stars.jpg");
 var _starsJpgDefault = parcelHelpers.interopDefault(_starsJpg);
-var _sunJpg = require("../img/sun.jpg");
-var _sunJpgDefault = parcelHelpers.interopDefault(_sunJpg);
+var _sunJpeg = require("../img/sun.jpeg");
+var _sunJpegDefault = parcelHelpers.interopDefault(_sunJpeg);
 var _mercuryJpg = require("../img/mercury.jpg");
 var _mercuryJpgDefault = parcelHelpers.interopDefault(_mercuryJpg);
 var _venusJpg = require("../img/venus.jpg");
@@ -639,7 +639,7 @@ scene.background = starryBackground;
 // Sun geometry with glow effect
 const sunGeo = new _three.SphereGeometry(16, 30, 30);
 const sunMat = new _three.MeshBasicMaterial({
-    map: textureLoader.load((0, _sunJpgDefault.default))
+    map: textureLoader.load((0, _sunJpegDefault.default))
 });
 const sun = new _three.Mesh(sunGeo, sunMat);
 scene.add(sun);
@@ -754,7 +754,7 @@ window.addEventListener("resize", ()=>{
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","../img/stars.jpg":"4FVaX","../img/sun.jpg":"1hKI0","../img/mercury.jpg":"dk5ma","../img/venus.jpg":"bhfTa","../img/earth.jpg":"11ilA","../img/mars.jpg":"kRWMv","../img/jupiter.jpg":"bOnFa","../img/saturn.jpg":"2Y35g","../img/saturn ring.png":"b53oN","../img/uranus ring.png":"2rSZd","../img/neptune.jpg":"eVk6K","../img/pluto.jpg":"23OzQ","@parcel/transformer-js/src/esmodule-helpers.js":"0bAHd","../img/uranus.jpeg":"2RSJR"}],"ktPTu":[function(require,module,exports) {
+},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv","../img/stars.jpg":"4FVaX","../img/mercury.jpg":"dk5ma","../img/venus.jpg":"bhfTa","../img/earth.jpg":"11ilA","../img/mars.jpg":"kRWMv","../img/jupiter.jpg":"bOnFa","../img/saturn.jpg":"2Y35g","../img/saturn ring.png":"b53oN","../img/uranus ring.png":"2rSZd","../img/neptune.jpg":"eVk6K","../img/pluto.jpg":"23OzQ","@parcel/transformer-js/src/esmodule-helpers.js":"0bAHd","../img/uranus.jpeg":"2RSJR","../img/sun.jpeg":"h6Fpe"}],"ktPTu":[function(require,module,exports) {
 /**
  * @license
  * Copyright 2010-2021 Three.js Authors
@@ -30830,10 +30830,7 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"1hKI0":[function(require,module,exports) {
-module.exports = require("ec77eb39393bbee2").getBundleURL("e6MYJ") + "sun.a08d7ba3.jpg" + "?" + Date.now();
-
-},{"ec77eb39393bbee2":"KoMmK"}],"dk5ma":[function(require,module,exports) {
+},{}],"dk5ma":[function(require,module,exports) {
 module.exports = require("18ae2dda862ced8c").getBundleURL("e6MYJ") + "mercury.e64be2d9.jpg" + "?" + Date.now();
 
 },{"18ae2dda862ced8c":"KoMmK"}],"bhfTa":[function(require,module,exports) {
@@ -30866,6 +30863,9 @@ module.exports = require("17b153dc7db3007c").getBundleURL("e6MYJ") + "pluto.cc2d
 },{"17b153dc7db3007c":"KoMmK"}],"2RSJR":[function(require,module,exports) {
 module.exports = require("62fdf8282e06570f").getBundleURL("e6MYJ") + "uranus.ad2abb9a.jpeg" + "?" + Date.now();
 
-},{"62fdf8282e06570f":"KoMmK"}]},["3ko3w","goJYj"], "goJYj", "parcelRequire7930")
+},{"62fdf8282e06570f":"KoMmK"}],"h6Fpe":[function(require,module,exports) {
+module.exports = require("c152324afeada927").getBundleURL("e6MYJ") + "sun.9101c105.jpeg" + "?" + Date.now();
+
+},{"c152324afeada927":"KoMmK"}]},["3ko3w","goJYj"], "goJYj", "parcelRequire7930")
 
 //# sourceMappingURL=index.64a4978e.js.map
